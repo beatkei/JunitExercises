@@ -24,10 +24,13 @@ public class StringUtils {
         String stringText = text;
         StringBuilder stringBuilderText1 = new StringBuilder(text);
         StringBuilder stringBuilderText2 = new StringBuilder(text);
+        
         // StringとStringBuilderの比較はStringクラスのcontentEqualsを使う
         Boolean result1 = stringText.contentEquals(stringBuilderText1);
+        
         // StringBuilder同士の比較はStringオブジェクトに変換してからontentEqualsを使う
         Boolean result2 = stringBuilderText1.toString().contentEquals(stringBuilderText2);
+
         if (result1 != true | result2 != true) return false;
         return true;
     }
@@ -35,9 +38,17 @@ public class StringUtils {
     public static String comvertIntegerToString(int i) {
         // その１　String.valueOf()を使ってStringに変換する
         String convertText1 = String.valueOf(i);
-        // その２　Integer.toString()を使ってStringに変換する
+        // その２(おすすめ)　Integer.toString()を使ってStringに変換する
         String convertText2 = Integer.toString(i);
         return convertText1;
+    }
+    
+    public static int comvertStringToInteger(String text) {
+        // その１ Integer.paseIntを利用する
+        int convertInteger1 = Integer.parseInt(text);
+        // その２(おすすめ)　Integer.paseInt()を使ってStringに変換する 
+        int convertInteger2 = Integer.valueOf(text);
+        return convertInteger2;
     }
     
 }

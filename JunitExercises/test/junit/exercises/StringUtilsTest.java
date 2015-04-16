@@ -24,4 +24,18 @@ public class StringUtilsTest {
         assertThat(StringUtils.toSnakeCase("practiceJunit"), is("practice_junit"));
     }
     
+    @Test
+    public void testCompareStringBuilderはtrueを返す_25の場合() {
+        assertThat(StringUtils.compareStringBuilder("25"), is(true));
+    }
+    
+    @Test
+    public void testConvertIntegerToStringはString型を返す_25の場合() {
+        assertThat(StringUtils.comvertIntegerToString(25), is("25"));
+    }
+
+    @Test
+    public void testConvertStringToIntegerはint型を返す_25の場合() {
+        assertThat(StringUtils.comvertStringToInteger("25"), is(25));
+    }
 }
