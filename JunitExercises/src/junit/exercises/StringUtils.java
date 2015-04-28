@@ -44,9 +44,9 @@ public class StringUtils {
     }
     
     public static int comvertStringToInteger(String text) {
-        // その１ Integer.paseIntを利用する
+        // その１(おすすめ) Integer.paseInt()を利用する
         int convertInteger1 = Integer.parseInt(text);
-        // その２(おすすめ)　Integer.paseInt()を使ってStringに変換する 
+        // その２　Integer.valueOf()を使ってStringに変換する 
         int convertInteger2 = Integer.valueOf(text);
         return convertInteger2;
     }
