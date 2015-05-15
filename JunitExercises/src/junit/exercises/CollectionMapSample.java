@@ -13,7 +13,7 @@ public class CollectionMapSample {
     map.put("one",1);
     map.put("two",2);
 
-    // Mapgの拡張forループ Map.Entry というInterfaceを利用して実現
+    // Mapの拡張forループ Map.Entry というInterfaceを利用して実現
     for (Map.Entry<String,Integer> e :map.entrySet()) {
         System.out.println(e.getKey() + ":" + e.getValue());
     }
@@ -25,7 +25,7 @@ public class CollectionMapSample {
     map.put("one",1);
     map.put("two",2);
 
-    // Mapgの拡張forループ Map.Entry というInterfaceを利用して実現
+    // Mapの拡張forループ Map.Entry というInterfaceを利用して実現
     for (Map.Entry<String,Integer> e :map.entrySet()) {
         System.out.println(e.getKey() + ":" + e.getValue());
     }
@@ -37,7 +37,7 @@ public class CollectionMapSample {
     map.put("one",1);
     map.put("two",2);
 
-    // Mapgの拡張forループ Map.Entry というInterfaceを利用して実現
+    // Mapの拡張forループ Map.Entry というInterfaceを利用して実現
     for (Map.Entry<String,Integer> e :map.entrySet()) {
         System.out.println(e.getKey() + ":" + e.getValue());
     }

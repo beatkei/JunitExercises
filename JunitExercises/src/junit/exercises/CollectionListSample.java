@@ -16,7 +16,13 @@ public class CollectionListSample {
     for (String s:list) {
         System.out.println(s);
     }
+    
+    // Iteratorをつかったforループ(拡張forループのほうが便利)
+    for (Iterator it = list.iterator(); it.hasNext();) {
+        System.out.println(it.next());        
+    }  
 
+    
     // ArrayListの代わりにLinkedList（挿入につよい）を利用 
     list = new LinkedList<>();
 
