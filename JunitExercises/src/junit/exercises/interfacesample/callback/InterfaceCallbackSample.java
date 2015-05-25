@@ -1,4 +1,4 @@
-package junit.exercises;
+package junit.exercises.interfacesample.callback;
 
 import java.util.*;
 import java.io.*;
